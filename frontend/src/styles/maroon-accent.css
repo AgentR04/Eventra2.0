@@ -1,0 +1,31 @@
+/* Minimal blue to maroon replacements - only targeting specific elements */
+
+/* Primary buttons */
+.btn-primary {
+  background-color: #800020 !important;
+  border-color: #800020 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #600018 !important;
+  border-color: #600018 !important;
+}
+
+/* Login button - only if it's blue */
+.btn-login.btn-primary, 
+a.btn-primary[href*="login"] {
+  background-color: #800020 !important;
+  border-color: #800020 !important;
+}
+
+/* Blue links */
+a.text-primary:hover, 
+a.text-primary:focus {
+  color: #800020 !important;
+}
+
+/* Progress bars - only if they're blue */
+.progress-bar.bg-primary, 
+.progress-bar.bg-info {
+  background-color: #800020 !important;
+}

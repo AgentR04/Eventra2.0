@@ -1,0 +1,216 @@
+/* Aggressive blue to maroon color replacements */
+
+/* Primary blue colors to maroon */
+:root {
+  --primary-maroon: #800020;
+  --primary-maroon-dark: #600018;
+  --primary-maroon-light: #a04048;
+  --primary-maroon-lighter: #d0a0a8;
+  --primary-maroon-lightest: #f0e0e4;
+  
+  /* Override all blue colors in the application */
+  --blue: #800020 !important;
+  --indigo: #800020 !important;
+  --primary: #800020 !important;
+  --blue-100: #f5e0e3 !important;
+  --blue-200: #ebc0c7 !important;
+  --blue-300: #e0a0ab !important;
+  --blue-400: #d5808f !important;
+  --blue-500: #800020 !important;
+  --blue-600: #800020 !important;
+  --blue-700: #600018 !important;
+  --blue-800: #600018 !important;
+  --blue-900: #400010 !important;
+}
+
+/* Target all blue text elements */
+.text-blue, .text-primary, .text-blue-500, .text-blue-600, .text-blue-700, .text-blue-800, .text-blue-900,
+.text-primary-500, .text-primary-600, .text-primary-700, .text-primary-800, .text-primary-900,
+.text-info, .text-indigo, .text-cyan {
+  color: var(--primary-maroon) !important;
+}
+
+/* Target all blue background elements */
+.bg-blue, .bg-primary, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900,
+.bg-primary-500, .bg-primary-600, .bg-primary-700, .bg-primary-800, .bg-primary-900,
+.bg-info, .bg-indigo, .bg-cyan, .blue, .primary {
+  background-color: var(--primary-maroon) !important;
+}
+
+/* Target all blue border elements */
+.border-blue, .border-primary, .border-blue-500, .border-blue-600, .border-blue-700, .border-blue-800, .border-blue-900,
+.border-primary-500, .border-primary-600, .border-primary-700, .border-primary-800, .border-primary-900,
+.border-info, .border-indigo, .border-cyan {
+  border-color: var(--primary-maroon) !important;
+}
+
+/* Target specific elements by their class or ID */
+.dashboard-header, .progress-bar-fill, .btn-primary, .btn-info,
+[class*="blue"], [class*="primary"], [class*="info"], [class*="indigo"], [class*="cyan"] {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+}
+
+/* Target elements with inline styles */
+[style*="background-color: #007bff"], [style*="background-color:#007bff"],
+[style*="background-color: rgb(0, 123, 255)"], [style*="background-color:rgb(0,123,255)"],
+[style*="background: #007bff"], [style*="background:#007bff"],
+[style*="background: rgb(0, 123, 255)"], [style*="background:rgb(0,123,255)"] {
+  background-color: var(--primary-maroon) !important;
+  background: var(--primary-maroon) !important;
+}
+
+/* Lighter blue variants */
+.text-blue-100, .text-blue-200, .text-blue-300, .text-blue-400,
+.text-primary-100, .text-primary-200, .text-primary-300, .text-primary-400 {
+  color: var(--primary-maroon-light) !important;
+}
+
+.bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400,
+.bg-primary-100, .bg-primary-200, .bg-primary-300, .bg-primary-400 {
+  background-color: var(--primary-maroon-lighter) !important;
+}
+
+.border-blue-100, .border-blue-200, .border-blue-300, .border-blue-400,
+.border-primary-100, .border-primary-200, .border-primary-300, .border-primary-400 {
+  border-color: var(--primary-maroon-light) !important;
+}
+
+/* Lightest blue variants */
+.bg-blue-50, .bg-primary-50 {
+  background-color: var(--primary-maroon-lightest) !important;
+}
+
+/* Button overrides */
+.btn-primary, .btn-blue, .btn-info, .btn-indigo, .btn-cyan,
+.btn.btn-primary, .btn.btn-blue, .btn.btn-info, .btn.btn-indigo, .btn.btn-cyan,
+button.btn-primary, button.btn-blue, button.btn-info, button.btn-indigo, button.btn-cyan,
+a.btn-primary, a.btn-blue, a.btn-info, a.btn-indigo, a.btn-cyan {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}
+
+.btn-primary:hover, .btn-blue:hover, .btn-info:hover, .btn-indigo:hover, .btn-cyan:hover,
+.btn.btn-primary:hover, .btn.btn-blue:hover, .btn.btn-info:hover, .btn.btn-indigo:hover, .btn.btn-cyan:hover,
+button.btn-primary:hover, button.btn-blue:hover, button.btn-info:hover, button.btn-indigo:hover, button.btn-cyan:hover,
+a.btn-primary:hover, a.btn-blue:hover, a.btn-info:hover, a.btn-indigo:hover, a.btn-cyan:hover {
+  background-color: var(--primary-maroon-dark) !important;
+  border-color: var(--primary-maroon-dark) !important;
+  color: white !important;
+}
+
+.btn-outline-primary, .btn-outline-blue, .btn-outline-info, .btn-outline-indigo, .btn-outline-cyan,
+.btn.btn-outline-primary, .btn.btn-outline-blue, .btn.btn-outline-info, .btn.btn-outline-indigo, .btn.btn-outline-cyan,
+button.btn-outline-primary, button.btn-outline-blue, button.btn-outline-info, button.btn-outline-indigo, button.btn-outline-cyan,
+a.btn-outline-primary, a.btn-outline-blue, a.btn-outline-info, a.btn-outline-indigo, a.btn-outline-cyan {
+  color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-blue:hover, .btn-outline-info:hover, .btn-outline-indigo:hover, .btn-outline-cyan:hover,
+.btn.btn-outline-primary:hover, .btn.btn-outline-blue:hover, .btn.btn-outline-info:hover, .btn.btn-outline-indigo:hover, .btn.btn-outline-cyan:hover,
+button.btn-outline-primary:hover, button.btn-outline-blue:hover, button.btn-outline-info:hover, button.btn-outline-indigo:hover, button.btn-outline-cyan:hover,
+a.btn-outline-primary:hover, a.btn-outline-blue:hover, a.btn-outline-info:hover, a.btn-outline-indigo:hover, a.btn-outline-cyan:hover {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}
+
+/* Progress bars and other elements */
+.progress-bar-fill, .progress-bar-primary, .progress-bar-blue {
+  background-color: var(--primary-maroon) !important;
+}
+
+/* Focus states */
+.focus\:ring-blue-500:focus, .focus\:ring-primary-500:focus {
+  --tw-ring-color: var(--primary-maroon) !important;
+}
+
+.focus\:border-blue-500:focus, .focus\:border-primary-500:focus {
+  border-color: var(--primary-maroon) !important;
+}
+
+/* Hover states */
+.hover\:bg-blue-500:hover, .hover\:bg-primary-500:hover {
+  background-color: var(--primary-maroon) !important;
+}
+
+.hover\:text-blue-500:hover, .hover\:text-primary-500:hover {
+  color: var(--primary-maroon) !important;
+}
+
+/* Specific component overrides */
+
+/* Dashboard header and cards */
+.eventra-dashboard, .dashboard-header, .card-header-blue, .card-header-primary, .card-header-info,
+.eventra-dashboard-header, .dashboard-title-bar, .dashboard-nav, .dashboard-top-bar {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}
+
+/* Progress bars */
+.progress-bar, .progress-bar-fill, .progress-bar-blue, .progress-bar-primary, .progress-bar-info,
+.progress .progress-bar, .progress .progress-bar-fill, .progress .progress-bar-blue, .progress .progress-bar-primary, .progress .progress-bar-info {
+  background-color: var(--primary-maroon) !important;
+}
+
+/* Links - be more specific to target blue links */
+a {
+  color: var(--primary-maroon);
+}
+
+a:hover {
+  color: var(--primary-maroon-dark);
+}
+
+a.text-blue, a.text-primary, a.text-info, a.blue-link, a.primary-link, a.info-link {
+  color: var(--primary-maroon) !important;
+}
+
+a.text-blue:hover, a.text-primary:hover, a.text-info:hover, a.blue-link:hover, a.primary-link:hover, a.info-link:hover {
+  color: var(--primary-maroon-dark) !important;
+}
+
+/* Direct element targeting */
+
+/* Navbar and header elements */
+.navbar-brand, .text-primary, .nav-link.active, .nav-item.active, .nav-link.active-link {
+  color: var(--primary-maroon) !important;
+}
+
+/* Login button and registration buttons */
+.login-button, a[href="/login"], button[href="/login"], a[href*="login"], button[href*="login"],
+.register-button, a[href="/register"], button[href="/register"], a[href*="register"], button[href*="register"],
+a[href="/signup"], button[href="/signup"], a[href*="signup"], button[href*="signup"] {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}
+
+.login-button:hover, a[href="/login"]:hover, button[href="/login"]:hover, a[href*="login"]:hover, button[href*="login"]:hover,
+.register-button:hover, a[href="/register"]:hover, button[href="/register"]:hover, a[href*="register"]:hover, button[href*="register"]:hover,
+a[href="/signup"]:hover, button[href="/signup"]:hover, a[href*="signup"]:hover, button[href*="signup"]:hover {
+  background-color: var(--primary-maroon-dark) !important;
+  border-color: var(--primary-maroon-dark) !important;
+}
+
+/* Eventra Dashboard specific elements */
+.eventra-dashboard, div:has(> h2:contains("Eventra Dashboard")), 
+div:has(> div:contains("Eventra Dashboard")),
+div:has(> span:contains("Eventra Dashboard")),
+div.dashboard-header, div.card-header.bg-primary, div.card-header.bg-blue,
+div.card-header.bg-info {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}
+
+/* Super aggressive catch-all for any remaining blue elements */
+[class*="blue"], [class*="primary"], [class*="info"], [style*="blue"], [style*="#007"], [style*="rgb(0, 123, 255)"] {
+  background-color: var(--primary-maroon) !important;
+  border-color: var(--primary-maroon) !important;
+  color: white !important;
+}

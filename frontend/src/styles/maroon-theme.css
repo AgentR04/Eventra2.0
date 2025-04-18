@@ -1,0 +1,92 @@
+/* Maroon theme - replaces blue with maroon */
+
+/* Define maroon colors */
+:root {
+  --maroon: #800020;
+  --maroon-dark: #600018;
+  --maroon-light: #a04048;
+  --maroon-lighter: #c08080;
+  --maroon-lightest: #f0e0e4;
+}
+
+/* Replace Bootstrap primary colors */
+.btn-primary {
+  background-color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--maroon-dark) !important;
+  border-color: var(--maroon-dark) !important;
+}
+
+.btn-outline-primary {
+  color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: var(--maroon) !important;
+  color: white !important;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: var(--maroon) !important;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--maroon) !important;
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: var(--maroon) !important;
+}
+
+/* Links */
+a {
+  color: var(--maroon);
+  text-decoration: none !important;
+}
+
+a:hover, a:focus {
+  color: var(--maroon-dark);
+  text-decoration: none !important;
+}
+
+/* Form controls */
+.form-control:focus {
+  border-color: var(--maroon-lighter) !important;
+  box-shadow: 0 0 0 0.25rem rgba(128, 0, 32, 0.25) !important;
+}
+
+/* Custom elements */
+.login-button, .register-button {
+  background-color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
+}
+
+/* Navbar */
+.navbar-dark, nav, header, .navbar, .nav {
+  background-color: var(--maroon) !important;
+}
+
+/* Force maroon background on all navigation elements */
+nav, header, [class*="navbar"], [class*="nav-"] {
+  background-color: var(--maroon) !important;
+  color: white !important;
+}
+
+/* Specific classes that might be using blue */
+.eventra-header, .eventra-navbar, .eventra-footer {
+  background-color: var(--maroon) !important;
+}
+
+/* Alert primary */
+.alert-primary {
+  background-color: var(--maroon-lightest) !important;
+  border-color: var(--maroon-lighter) !important;
+  color: var(--maroon-dark) !important;
+}

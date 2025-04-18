@@ -1,0 +1,42 @@
+/* Simple blue to maroon replacements */
+
+/* Primary blue color to maroon */
+.bg-blue-500, .bg-blue-600, .bg-blue-700 {
+  background-color: #800020 !important;
+}
+
+/* Blue buttons to maroon */
+.btn-primary {
+  background-color: #800020 !important;
+  border-color: #800020 !important;
+}
+
+.btn-primary:hover {
+  background-color: #600018 !important;
+  border-color: #600018 !important;
+}
+
+/* Blue progress bars to maroon */
+.progress-bar {
+  background-color: #800020 !important;
+}
+
+/* Blue text to maroon */
+.text-blue-500, .text-blue-600, .text-blue-700 {
+  color: #800020 !important;
+}
+
+/* Target specific elements */
+a[href="/register-college"], 
+a[href="/register/college"],
+a.register-college-btn {
+  background-color: #800020 !important;
+  border-color: #800020 !important;
+}
+
+/* Login button */
+a[href="/login"],
+.login-btn {
+  background-color: #800020 !important;
+  border-color: #800020 !important;
+}
