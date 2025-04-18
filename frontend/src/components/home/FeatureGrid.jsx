@@ -3,6 +3,7 @@ import { FaCalendarAlt, FaUsers, FaChartPie, FaBell, FaRobot, FaMobileAlt } from
 import FeatureCard from '../ui/FeatureCard';
 import { motion } from 'framer-motion';
 
+
 const FeatureGrid = () => {
   const features = [
     {

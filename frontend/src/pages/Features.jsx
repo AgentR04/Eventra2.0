@@ -1,9 +1,16 @@
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaUsers, FaChartPie, FaBell, FaRobot, FaChartLine, FaMobile } from 'react-icons/fa';
+import image1 from "../assets/Smart Scheduling System.jpg"
+import image2 from "../assets/AI-Based Team & Task Management.jpg"
+import image3 from "../assets/Budget Management & Tracking.jpg"
+import image4 from "../assets/Communication & Notification System.jpg"
+import image5 from "../assets/AI Optimization & Assistant Bot.jpg"
+import image6 from "../assets/Mobile-Friendly & Multi-User Access.jpg"
+import image7 from "../assets/image7.jpg"
 
 const FeatureDetail = ({ id, icon, title, description, details, imageUrl, reverse }) => {
   return (
-    <section id={id} className="py-16 border-b border-gray-200 last:border-0">
+    <section id={id} className="pb-16 border-b border-gray-200 last:border-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12`}>
           <motion.div
@@ -46,7 +53,7 @@ const FeatureDetail = ({ id, icon, title, description, details, imageUrl, revers
               <img 
                 src={imageUrl} 
                 alt={title} 
-                className="w-full h-auto"
+                className="w-full h-96 object-cover-"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = `https://via.placeholder.com/600x400?text=${title.replace(/\s+/g, '+')}`;
@@ -74,7 +81,7 @@ const Features = () => {
         "Offers AI suggestions for optimal time slots",
         "Syncs with Google Calendar / Outlook (optional)"
       ],
-      imageUrl: "/src/assets/images/scheduling.png"
+      imageUrl: image1
     },
     {
       id: "team-management",
@@ -88,7 +95,7 @@ const Features = () => {
         "Task dependencies and reminders",
         "AI recommends task reassignment in case of delays or overloads"
       ],
-      imageUrl: "/src/assets/images/team-management.png"
+      imageUrl: image2
     },
     {
       id: "budget",
@@ -102,7 +109,7 @@ const Features = () => {
         "AI alerts for overspending trends",
         "Suggests reallocation strategies or savings opportunities"
       ],
-      imageUrl: "/src/assets/images/budget.png"
+      imageUrl: image3
     },
     {
       id: "communication",
@@ -115,7 +122,7 @@ const Features = () => {
         "Automated reminders for deadlines",
         "Optional integration with WhatsApp, Discord, Slack"
       ],
-      imageUrl: "/src/assets/images/communication.png"
+      imageUrl: image4
     },
     {
       id: "ai-assistant",
@@ -128,7 +135,7 @@ const Features = () => {
         "Predicts high-risk areas for delays or overbookings",
         "Suggests vendors, decorators, or performers based on budget and ratings"
       ],
-      imageUrl: "/src/assets/images/ai-assistant.png"
+      imageUrl: image5
     },
     {
       id: "analytics",
@@ -141,7 +148,7 @@ const Features = () => {
         "Expense trend analysis",
         "Automated post-event report generation for organizers"
       ],
-      imageUrl: "/src/assets/images/analytics.png"
+      imageUrl: image7
     },
     {
       id: "mobile",
@@ -154,7 +161,7 @@ const Features = () => {
         "Real-time sync across devices",
         "Offline mode for critical functions"
       ],
-      imageUrl: "/src/assets/images/mobile.png"
+      imageUrl: image6
     }
   ];
 

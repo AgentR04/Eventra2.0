@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-
+import mission from "../assets/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg"
+import team from "../assets/WhatsApp Image 2025-04-19 at 02.07.32_3e2120b1.jpg"
 const About = () => {
   return (
     <div>
@@ -21,7 +22,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-16">
+      <div className="pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -46,7 +47,7 @@ const About = () => {
             >
               <div className="absolute -top-6 -left-6 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl"></div>
               <img 
-                src="/src/assets/images/about-mission.jpg" 
+                src={mission}
                 alt="Our Mission" 
                 className="relative z-10 rounded-lg shadow-xl w-full"
                 onError={(e) => {
@@ -70,9 +71,9 @@ const About = () => {
             >
               <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-secondary/20 rounded-full filter blur-3xl"></div>
               <img 
-                src="/src/assets/images/about-story.jpg" 
+                src={team}
                 alt="Our Story" 
-                className="relative z-10 rounded-lg shadow-xl w-full"
+                className="relative z-10 rounded-lg shadow-xl object-cover"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = 'https://via.placeholder.com/600x400?text=Our+Story';
@@ -91,7 +92,7 @@ const About = () => {
                 Eventra was born from the frustrations of a group of college students who experienced firsthand the challenges of organizing large-scale campus events. After struggling with spreadsheets, miscommunications, and last-minute crises during their college festival, they envisioned a better way.
               </p>
               <p className="text-lg text-gray-600">
-                Founded in 2023, our team combines expertise in artificial intelligence, user experience design, and event management to create a platform that addresses the unique needs of college event organizers. What started as a solution for one campus has grown into a platform trusted by student organizations across the country.
+                Founded in 2025, our team combines expertise in artificial intelligence, user experience design, and event management to create a platform that addresses the unique needs of college event organizers. What started as a solution for one campus has grown into a platform trusted by student organizations across the country.
               </p>
             </motion.div>
           </div>
