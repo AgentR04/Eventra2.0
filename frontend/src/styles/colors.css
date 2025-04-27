@@ -1,0 +1,117 @@
+:root {
+  /* Primary color (maroon) and its variations */
+  --primary: #800020;
+  --primary-dark: #600018;
+  --primary-light: #a04048;
+  --primary-lighter: #d0a0a8;
+  --primary-lightest: #f0e0e4;
+
+  /* Secondary colors */
+  --secondary: #4a4a4a;
+  --secondary-light: #6a6a6a;
+  --secondary-lighter: #9a9a9a;
+  
+  /* Background colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --bg-tertiary: #f0f0f0;
+  
+  /* Text colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  /* Accent colors */
+  --accent-success: #28a745;
+  --accent-info: #800020;
+  --accent-warning: #ffc107;
+  --accent-danger: #dc3545;
+}
+
+/* Utility classes for the maroon theme */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light) !important;
+}
+
+.bg-primary-gradient {
+  background-image: var(--gradient-primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+/* Simple blue to maroon replacements */
+.bg-blue-50 { background-color: var(--primary-lightest) !important; }
+.bg-blue-100 { background-color: #f5e0e3 !important; }
+.bg-blue-200 { background-color: #ebc0c7 !important; }
+.bg-blue-300 { background-color: #e0a0ab !important; }
+.bg-blue-400 { background-color: #d5808f !important; }
+.bg-blue-500 { background-color: #c06073 !important; }
+.bg-blue-600 { background-color: #a04057 !important; }
+.bg-blue-700 { background-color: #80203b !important; }
+.bg-blue-800 { background-color: #600020 !important; }
+.bg-blue-900 { background-color: #400010 !important; }
+
+.text-blue-500 { color: #a04057 !important; }
+.text-blue-600 { color: var(--primary) !important; }
+.text-blue-700 { color: #80203b !important; }
+.text-blue-800 { color: #600020 !important; }
+.text-blue-900 { color: #400010 !important; }
+
+/* Bootstrap overrides */
+.btn-primary { 
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover { 
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+/* Basic button styles */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-light);
+  border-color: var(--secondary-light);
+}
